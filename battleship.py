@@ -33,4 +33,7 @@ else:
     else:
         print "You missed my battleship!"
         board[guess_row][guess_col] = "X"
-        print_board(board)
+    # Print (turn + 1)
+    for turn in range(4):
+        print "Turn", turn + 1
+    print_board(board)
