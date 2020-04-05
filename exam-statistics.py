@@ -11,5 +11,11 @@ def grades_sum(scores):
     for score in scores:
         total += score 
     return total 
-    
+
+def grades_average(grades_input):
+    sumTotal = grades_sum(grades_input)
+    averageTotal = sumTotal / float(len(grades_input))
+    return averageTotal
+
 print grades_sum(grades)
+print grades_average(grades)
