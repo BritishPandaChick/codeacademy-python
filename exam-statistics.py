@@ -24,6 +24,14 @@ def grades_variance(scores):
         variance += (average - score) ** 2
     return variance / len(scores)
 
+def grades_std_deviation(variance):
+    return variance ** 0.5
+
+variance = grades_variance(grades)
+
+for grade in grades:
+    print grade
 print grades_sum(grades)
 print grades_average(grades)
 print grades_variance(grades)
+print grades_std_deviation(variance)
