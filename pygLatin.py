@@ -1,10 +1,9 @@
-print "Welcome to the Pig Latin Translator!"
+# print "Welcome to the Pig Latin Translator!"
 # Translation suffix 
 pyg = 'ay'
 
 # Start coding here!
-original = raw_input("Enter a word:")
-print original
+original = raw_input('Enter a word:')
 
 if len(original) > 0 and original.isalpha():
     word = original.lower()
